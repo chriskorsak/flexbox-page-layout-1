@@ -2,7 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid black; */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu a {
+  color: white;
+}
+
+.footer a {
+  color: #5995DA;
 }
 
 /* css styles for menu start */
@@ -88,4 +103,36 @@ header {
 }
 
 /* css styles for photo grid end */
+
+/* css styles for footer start */
+.footer {
+  display: flex;
+  font-size: 120%;
+}
+
+.footer-item {
+  background-color: #D6E9FE;
+  border: solid 1px white;
+  height: 200px;
+  width: 300px;
+}
+
+.footer-item-2 {
+  flex: 1;
+}
+
+.footer-item-1,
+.footer-item-3 {
+  background-color: #5995DA;
+}
+
+.footer-item-2 {
+  display: flex;
+}
+
+.footer-item-2 > p {
+  margin: auto;
+}
+
+/* css styles for footer end */
 
