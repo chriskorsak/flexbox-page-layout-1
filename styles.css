@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+/* css styles for menu start */
+
+.menu-container {
+  color: white;
+  background-color: #5995DA;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+}
+
+.links > li {
+  margin-left: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* css styles for menu end */
+
+/* css styles for header start */
+
+.header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  width: 900px;
+  height: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe,
+.social {
+  align-self: flex-end;
+  padding-bottom: 20px;
+}
+
+/* css styles for header end */
+
+/* css styles for photo grid begin */
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo {
+  width: 300px;
+}
+
+/* this finds the first .photo element, and moves it to the end */
+.photo:nth-of-type(1) {
+  order: 1;
+}
+
+/* this finds the 5th .photo element and moves it to the front */
+.photo:nth-of-type(5) {
+  order: -1;
+}
+
+/* css styles for photo grid end */
+
